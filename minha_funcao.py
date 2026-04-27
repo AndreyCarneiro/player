@@ -20,8 +20,8 @@ def soma(n1, n2):#n1 e n2 são parâmetros da função
 soma(6, 20)
 
 def formatar_real(valor):
-    return f"R$ {valor:.2f}".replace(',', 'X').replace('.', ',').replace('X', '.')
+    return f"R$ {valor:.2f}".replace(',', '.').replace('.', ',').replace('X', '.')
 
 #Uso:
-preco_hospedagem = 49.99
-print(formatar_real(preco_hospedagem))#49,99
+preco_hospedagem = 1234.50
+print(formatar_real(preco_hospedagem))#1.234,50
